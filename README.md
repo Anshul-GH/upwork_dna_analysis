@@ -24,11 +24,4 @@ Here are the steps I recommend to finishing this project. It is unlikely you can
     9. Change the previous step into a function, runMostCommonSubstring. Test it. And hand it in!
     • Make sure that you have good comments and docstring including program header and function description. 
 
-Submissions:
-(1) Submit a document that includes your algorithm and/or flowchart for the function mostCommonK
-(2) Submit your Python source file PA2-<your last name>.py
- 
-Late Submissions:
-    • 
-        ◦ Within 2 days of the due: 20% reduction.
-        ◦ Submissions more than 48 hours after the due will not be accepted without prior arrangement.
+
