@@ -5,8 +5,8 @@ from config import get_config
 # first point of entry
 def runMostCommonSubstring():
     '''This method is the entry point which prompts the user for choosing a valid text 
-    file with the required DNA sequence to be analyzed. The file chosen must be of the 
-    extension .txt and should only contain a single string dna sequence.
+    file with the required DNA sequence data to be analyzed. The file chosen must be of the 
+    extension '.txt' and should only contain a single string dna sequence.
 
     Input Parameters: [None]; 
     
@@ -28,7 +28,9 @@ def runMostCommonSubstring():
     # read the data from the file
     dna=inp_file.read()
 
-    # define the mink and maxk values
+    # define the mink and maxk values in an external config file
+    # Note: These can also be hard-coded, if needed. The advantage with the config file approach
+    # is that it can be modified without touching the primary code.
     mink = get_config("MIN_K", default = 4)
     maxk = get_config("MAX_K", default = 9)
 

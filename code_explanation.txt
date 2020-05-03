@@ -1,0 +1,26 @@
+Primary Code File: PA2-jain.py
+Supporting Code File: config.py
+
+
+Method 1:
+runMostCommonSubstring()
+
+This method is the entry point which prompts the user for choosing a valid text 
+file with the required DNA sequence data to be analyzed. The file chosen must be of the 
+extension '.txt' and should only contain a single string dna sequence.
+This method also reads the 'mink' and 'maxk' values from an external config file that can be modified without touching the primary code.
+This method inturn calls the mostCommonSubstring method for further processing of the data.
+
+
+Method 2:
+mostCommonSubstring()
+This is the primary method that implements the algorithm to identify the most common and longest substring.
+This inturn calls the mostCommonK method for further segregating the process to identify the substring of a given length
+The actual core logic is still within the mostCommonK method but the key difference is that mostCommonSubstring takes up the most common substring
+for each chosen length and further aggregates the data to idnetify the overall most common substring.
+
+
+Method 3:
+mostCommonK()
+This method implements the core logic to search the most common substring of a given length supplied as input and returns the string 
+and the frequency count.
